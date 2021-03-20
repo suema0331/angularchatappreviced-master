@@ -1,0 +1,39 @@
+.user-list {
+  position: relative;
+  top: 10px;
+  width: 120px;
+  height: 100%;
+  overflow: auto;
+  padding-top: 37px;
+  border-right: 1px solid #ddd;
+  background-color: white;
+}
+
+.users {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.users li {
+  border-bottom: 1px solid #ddd;
+}
+
+.users li a {
+  display: block;
+  height: 50px;
+  padding: 10px;
+}
+
+.image {
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+}
+
+/* 480px以下に適用されるCSS（スマホ用） */
+@media screen and (max-width: 480px) {
+  .user-list {
+    display: none;
+  }
+}
